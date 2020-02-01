@@ -1,0 +1,5 @@
+-D
+-b 8192
+-f 1
+-w /etc/nginx/nginx.conf -p wa
+-w /etc/nginx/conf.d/*.conf -p wa
