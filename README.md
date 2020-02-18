@@ -32,7 +32,7 @@ b) nginx с версии 1.5.2 умеет посылать логи напрям
 error_log syslog:server=192.168.111.16:514,tag=nginx_error;
 access_log  syslog:server=192.168.111.16:514,facility=local6,tag=nginx_access,severity=info main;
 ```   
-c) аудит настроен на передачу событий не сохраняя их локально в журнале.    
+c) аудит настроен на передачу событий не сохраняя их локально в журнале средствами утилиты audisp.    
 * настроить отслеживание изменения файла nginx. Для этого добавим правило. В `/etc/audit/rules.d/audit.rules`   
 ```
 -w /etc/nginx/nginx.conf -p wa
